@@ -11,8 +11,7 @@ MgIIk = {'lambda_min' : 2794,
          'threshold' : 10
         }
 
-The data is interpolated to a common wavelength grid according to the parameters in the line dict, calibrated to intensity in $erg s^{-1} cm^{-2} sr^{-1} \Angström
-^{-1}$ and filtered with the following steps:
+The data is interpolated to a common wavelength grid according to the parameters in the line dict, calibrated to intensity in $erg s^{-1} cm^{-2} sr^{-1} \Angstrom^{-1}$ and filtered with the following steps:
 
 1. Cosmic rays to zero. 
 2. Pixel with -100 DN are set to zero.
