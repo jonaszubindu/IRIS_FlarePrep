@@ -11,20 +11,16 @@ import os
 from astropy import constants as c
 
 
-from irisreader import observation, raster_cube
+from irisreader import observation
 from irisreader.utils.date import to_epoch
-from irisreader.utils.date import from_Tformat
 
 from irispy.utils import get_interpolated_effective_area
 
-import irisreader as ir
-
 import astropy.units as u
-from astropy.time import Time, TimeDelta
+from astropy.time import Time
 from sunpy.time import parse_time
 from tqdm import tqdm
 
-import pickle
 import numpy as np
 import pandas as pd
 
@@ -34,7 +30,7 @@ from scipy.interpolate import interp1d
 import astroscrappy
 from sunpy.coordinates.sun import earth_distance
 
-from datetime import datetime, timedelta, time
+from datetime import datetime
 from warnings import warn
 import h5py
 import gc
