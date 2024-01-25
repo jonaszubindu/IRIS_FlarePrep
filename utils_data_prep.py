@@ -854,7 +854,7 @@ if __name__ == "__main__":
          'threshold' : 10
         }
 
-    obs_ids_Andrea = ['20220118_165527_4204700138', '20210908_161659_3603013104'] # place the observations you want to process here
+    obs_ids = ['20220118_165527_4204700138', '20210908_161659_3603013104'] # place the observations you want to process here
 
     # Any preprocessing of IRIS obs
 
