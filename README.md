@@ -35,3 +35,4 @@ After these processing and calibration steps the data is stored in a class calle
 All other relevant data for each observation is stored as attributes of Obs_raw_data.
 The data can then be used in the repository IRIScast to train neural networks at flare prediction and in the repository IRIS_AIA_HMI_align to create HMI/AIA IRIS aligned images.
 
+An example code excerpt is given in the file utils_data_prep.py at the bottom. Make sure you have downloaded the appropriate IRIS observation and setup the paths on your system accordingly to run this example. Create a directory /iris/ within this repository to store the data at. The data can be downloaded [here](https://www.lmsal.com/hek/hcr?cmd=view-event&event-id=ivo%3A%2F%2Fsot.lmsal.com%2FVOEvent%23VOEvent_IRIS_20150311_224758_3860107071_2015-03-11T22%3A47%3A582015-03-11T22%3A47%3A58.xml)
