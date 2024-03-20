@@ -34,7 +34,6 @@ from datetime import datetime
 from warnings import warn
 import h5py
 import gc
-from astropy import constants as c
 
 import utils_features as uf
 
