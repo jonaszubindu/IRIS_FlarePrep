@@ -668,7 +668,7 @@ class Obs_raw_data:
             self.threshold = threshold
             self.spectra_stats_single_obs = {}
 
-            interpolated_image_clean_norm, norm_val_image = interpolate_spectra(self.spectra_stats_single_obs, raster, lambda_min, lambda_max, field, line, n_breaks, threshold, calib = True) #spectra_stats_single_obs
+            interpolated_image_clean_norm, norm_val_image = interpolate_spectra(raster, lambda_min, lambda_max, field, line, n_breaks, threshold, calib = True) #spectra_stats_single_obs
 
             # self.spectra_stats_single_obs = spectra_stats_single_obs
 
