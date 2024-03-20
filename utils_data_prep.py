@@ -868,7 +868,7 @@ if __name__ == "__main__":
         raster_MgIIk = obs.raster("Mg II k")
 
         #prepare obs data with my pipeline
-        obs_MgIIk = utils.Obs_raw_data(obs_id, raster_MgIIk, **MgIIk)
+        obs_MgIIk = Obs_raw_data(obs_id, raster_MgIIk, **MgIIk)
 
         obs.close()
 
