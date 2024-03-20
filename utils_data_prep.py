@@ -901,7 +901,7 @@ if __name__ == "__main__":
 
 
         # transform from (n*t) to (n,t)
-        times, im_arr, norm_vals = utils.transform_arrays(obs_cls.times_global, obs_cls.im_arr_global, obs_cls.norm_vals_global, obs_cls.num_of_raster_pos, forward=False)
+        times, im_arr, norm_vals = transform_arrays(obs_cls.times_global, obs_cls.im_arr_global, obs_cls.norm_vals_global, obs_cls.num_of_raster_pos, forward=False)
 
         #extract features
         df_features = uf.extract_features_MgIIk(im_arr_test, save_path=None)
