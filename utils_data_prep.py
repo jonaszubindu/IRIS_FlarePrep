@@ -849,13 +849,13 @@ if __name__ == "__main__":
          'threshold' : 10
         }
 
-    obs_ids = ['20220118_165527_4204700138', '20210908_161659_3603013104'] # place the observations you want to process here
+    obs_ids = ['20210908_161659_3603013104'] # place the observations you want to process here
 
     # Any preprocessing of IRIS obs
 
     spectra_stats = {}
 
-    for obs_id in tqdm(['20150311_224758_3860107071']): # replace the list with the obs_ids you want to process
+    for obs_id in tqdm(obs_ids): # replace the list with the obs_ids you want to process
         gc.collect()
         year = obs_id[:4]
         month = obs_id[4:6]
