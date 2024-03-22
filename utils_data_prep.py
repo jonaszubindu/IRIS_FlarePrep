@@ -766,10 +766,10 @@ class Obs_raw_data:
     def save_arr(self, filename, line, typ):
 
         filename = filename.split('.')[0]
-
-        try: # make directory for save file to keep it all together.
-            os.mkdir(path=f'/iris/{line}/{typ}/{filename}/')
-        except Exception:
+        path = f'/iris/{line}/{typ}/{filename}/'
+        if not os.path.exists(path): # make directory for save file to keep it all together.
+            os.makedirs(path)
+        else:
             pass
 
 
